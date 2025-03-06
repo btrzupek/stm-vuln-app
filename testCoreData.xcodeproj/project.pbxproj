@@ -14,6 +14,7 @@
 		A5A70A2729F00B030054BEF2 /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5A70A2629F00B030054BEF2 /* Persistence.swift */; };
 		A5A70A2A29F00B030054BEF2 /* testCoreData.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = A5A70A2829F00B030054BEF2 /* testCoreData.xcdatamodeld */; };
 		A5F6EE5E2D793A3200001692 /* UserDatabase.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5F6EE5D2D793A3200001692 /* UserDatabase.swift */; };
+		A5F6EE602D7950B700001692 /* vulnerableCode.py in Resources */ = {isa = PBXBuildFile; fileRef = A5F6EE5F2D7950A800001692 /* vulnerableCode.py */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,7 @@
 		A5A70A2929F00B030054BEF2 /* testCoreData.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = testCoreData.xcdatamodel; sourceTree = "<group>"; };
 		A5A70A2B29F00B030054BEF2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A5F6EE5D2D793A3200001692 /* UserDatabase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDatabase.swift; sourceTree = "<group>"; };
+		A5F6EE5F2D7950A800001692 /* vulnerableCode.py */ = {isa = PBXFileReference; lastKnownFileType = text.script.python; path = vulnerableCode.py; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +65,7 @@
 				A5A70A2129F00B030054BEF2 /* Assets.xcassets */,
 				A5A70A2629F00B030054BEF2 /* Persistence.swift */,
 				A5F6EE5D2D793A3200001692 /* UserDatabase.swift */,
+				A5F6EE5F2D7950A800001692 /* vulnerableCode.py */,
 				A5A70A2B29F00B030054BEF2 /* Info.plist */,
 				A5A70A2829F00B030054BEF2 /* testCoreData.xcdatamodeld */,
 				A5A70A2329F00B030054BEF2 /* Preview Content */,
@@ -136,6 +139,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A5F6EE602D7950B700001692 /* vulnerableCode.py in Resources */,
 				A5A70A2529F00B030054BEF2 /* Preview Assets.xcassets in Resources */,
 				A5A70A2229F00B030054BEF2 /* Assets.xcassets in Resources */,
 			);
