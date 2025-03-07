@@ -1,9 +1,9 @@
 #
-//  vulnerableCode.py
-//  testCoreData
-//
-//  Created by Brian Trzupek on 3/5/25.
-//
+# vulnerableCode.py
+# testCoreData
+#
+# Created by Brian Trzupek on 3/5/25.
+#
 import sqlite3
 from flask import Flask, request, redirect
 
