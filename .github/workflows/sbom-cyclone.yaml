@@ -9,7 +9,7 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-    - uses: actions/checkout@v3
+    - uses: actions/checkout@v4    # Updated to v4
     
     - name: Generate SBOM
       uses: CycloneDX/gh-python-generate-sbom@v1
@@ -19,7 +19,8 @@ jobs:
         format: xml
     
     - name: Upload SBOM
-      uses: actions/upload-artifact@v3
+      uses: actions/upload-artifact@v4    # Updated to v4
       with:
         name: sbom
         path: bom.xml
+        retention-days: 90    # Optional: specify how long to keep the artifact
