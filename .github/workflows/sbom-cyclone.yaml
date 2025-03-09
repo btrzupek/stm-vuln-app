@@ -1,0 +1,25 @@
+name: Generate SBOM
+
+on:
+  push:
+    branches: [ main ]
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v3
+    
+    - name: Generate SBOM
+      uses: CycloneDX/gh-python-generate-sbom@v1
+      with:
+        input: requirements.txt  # For Python projects
+        output: bom.xml
+        format: xml
+    
+    - name: Upload SBOM
+      uses: actions/upload-artifact@v3
+      with:
+        name: sbom
+        path: bom.xml
