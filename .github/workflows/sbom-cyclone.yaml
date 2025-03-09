@@ -9,18 +9,30 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-    - uses: actions/checkout@v4    # Updated to v4
+    - uses: actions/checkout@v4
     
+    # Add step to create requirements.txt if you're using pip
+    - name: Set up Python
+      uses: actions/setup-python@v5
+      with:
+        python-version: '3.x'
+    
+    # Generate requirements.txt from your project
+    - name: Generate requirements.txt
+      run: |
+        pip install pip-tools
+        pip freeze > requirements.txt
+    
+    # Generate SBOM (removed the invalid 'format' parameter)
     - name: Generate SBOM
       uses: CycloneDX/gh-python-generate-sbom@v1
       with:
-        input: requirements.txt  # For Python projects
+        input: requirements.txt
         output: bom.xml
-        format: xml
     
     - name: Upload SBOM
-      uses: actions/upload-artifact@v4    # Updated to v4
+      uses: actions/upload-artifact@v4
       with:
         name: sbom
         path: bom.xml
-        retention-days: 90    # Optional: specify how long to keep the artifact
+        retention-days: 90
