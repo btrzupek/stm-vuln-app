@@ -18,6 +18,6 @@ jobs:
       recall_url: https://recall-dev-agitk5jfpq-uc.a.run.app
       tenant_id: btrzupek
       repo_id: stm-vuln-app
-      mode: delta
+      mode: full
     secrets:
       RECALL_INGEST_TOKEN: ${{ secrets.RECALL_INGEST_TOKEN }}
